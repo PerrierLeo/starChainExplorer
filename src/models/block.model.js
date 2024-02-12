@@ -9,9 +9,11 @@ class Block {
     this.number = block["number"];
     this.date = new Date(block["timestamp"] * 1000);
     this.transactions = block["transactions"];
+    this.gasLimit = block["gasLimit"];
+    this.gasUsed = block["gasUsed"];
+    this.baseFeePerGas = block["baseFeePerGas"];
+    this.difficulty = block["difficulty"];
   }
-  // "gasLimit": { "type": "BigNumber", "hex": "0x01c9c380" }, "gasUsed": { "type": "BigNumber", "hex": "0x9cd810" },
-  // "baseFeePerGas": { "type": "BigNumber", "hex": "0x0503a8d63d" }, "_difficulty": { "type": "BigNumber", "hex": "0x00" } }
 
   //   insert(string) {
   //     let node = this.root;
