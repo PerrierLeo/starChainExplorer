@@ -5,3 +5,11 @@
 .router-link-active {
   @apply text-lg underline underline-offset-8;
 }
+
+html {
+  @apply overflow-hidden;
+}
+
+body {
+  @apply overflow-auto bg-gradient-to-r from-appMainColor to-black;
+}
